@@ -20,7 +20,7 @@ object SeqTreeBenchmark extends Bench.OfflineReport {
 
   performance of "applyTailRec" in {
     using(treeGen) in { case (tree, size) =>
-      tree.applyTailRec(size - 1)
+      tree(size - 1)
     }
   }
 }
